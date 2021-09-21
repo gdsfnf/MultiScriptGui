@@ -57,7 +57,7 @@ close.TextSize = 14.000
 close.TextWrapped = true
 close.MouseButton1Down:connect(function()
 main.Visible = false
-openmain.Visible = true
+openmain.Visible = false
 end)
 
 openmain.Name = "openmain"
