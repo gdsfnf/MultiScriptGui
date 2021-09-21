@@ -1,8 +1,10 @@
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
-local PetSimX = Instance.new("TextButton")
 local close = Instance.new("TextButton")
+local minimalize = Instance.new("TextButton")
+local PetSimX = Instance.new("TextButton")
+local antikick = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
@@ -11,8 +13,10 @@ ScreenGui.Parent = game.CoreGui
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-main.Position = UDim2.new(0.0744485259, 0, 0.614814818, 0)
-main.Size = UDim2.new(0, 332, 0, 211)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.238970593, 0, 0.518518507, 0)
+main.Size = UDim2.new(0, 505, 0, 265)
+main.Visible = false
 main.Active = true
 main.Draggable = true
 
@@ -20,8 +24,7 @@ title.Name = "title"
 title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 title.BorderSizePixel = 0
-title.Position = UDim2.new(-0.000852653757, 0, -0.00129894959, 0)
-title.Size = UDim2.new(0, 299, 0, 31)
+title.Size = UDim2.new(0, 421, 0, 34)
 title.Font = Enum.Font.GothamBold
 title.Text = "Script Gui By: Matix"
 title.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -29,27 +32,13 @@ title.TextScaled = true
 title.TextSize = 14.000
 title.TextWrapped = true
 
-PetSimX.Name = "Pet Sim X"
-PetSimX.Parent = main
-PetSimX.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-PetSimX.Position = UDim2.new(0.195783138, 0, 0.379146934, 0)
-PetSimX.Size = UDim2.new(0, 200, 0, 50)
-PetSimX.Font = Enum.Font.GothamBlack
-PetSimX.Text = "Pet Sim X"
-PetSimX.TextColor3 = Color3.fromRGB(0, 0, 0)
-PetSimX.TextScaled = true
-PetSimX.TextSize = 14.000
-PetSimX.TextWrapped = true
-PetSimX.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
-end)
-
 close.Name = "close"
 close.Parent = main
 close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-close.Position = UDim2.new(0.9006024, 0, 0, 0)
-close.Size = UDim2.new(0, 33, 0, 30)
-close.Font = Enum.Font.GothamBlack
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.916831672, 0, 0, 0)
+close.Size = UDim2.new(0, 42, 0, 34)
+close.Font = Enum.Font.GothamBold
 close.Text = "X"
 close.TextColor3 = Color3.fromRGB(0, 0, 0)
 close.TextScaled = true
@@ -60,19 +49,66 @@ main.Visible = false
 openmain.Visible = false
 end)
 
+minimalize.Name = "minimalize"
+minimalize.Parent = main
+minimalize.BackgroundColor3 = Color3.fromRGB(130, 0, 195)
+minimalize.BorderSizePixel = 0
+minimalize.Position = UDim2.new(0.833663344, 0, 0, 0)
+minimalize.Size = UDim2.new(0, 42, 0, 34)
+minimalize.Font = Enum.Font.GothamBold
+minimalize.Text = "-"
+minimalize.TextColor3 = Color3.fromRGB(0, 0, 0)
+minimalize.TextScaled = true
+minimalize.TextSize = 14.000
+minimalize.TextWrapped = true
+minimalize.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+PetSimX.Name = "PetSimX"
+PetSimX.Parent = main
+PetSimX.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+PetSimX.Position = UDim2.new(0.0839999989, 0, 0.404000014, 0)
+PetSimX.Size = UDim2.new(0, 200, 0, 50)
+PetSimX.Font = Enum.Font.GothamBold
+PetSimX.Text = "Pet Sim X"
+PetSimX.TextColor3 = Color3.fromRGB(0, 0, 0)
+PetSimX.TextScaled = true
+PetSimX.TextSize = 14.000
+PetSimX.TextWrapped = true
+PetSimX.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
+end)
+
+antikick.Name = "antikick"
+antikick.Parent = main
+antikick.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+antikick.Position = UDim2.new(0.520792067, 0, 0.403773576, 0)
+antikick.Size = UDim2.new(0, 200, 0, 50)
+antikick.Font = Enum.Font.GothamBold
+antikick.Text = "Anti Kick"
+antikick.TextColor3 = Color3.fromRGB(0, 0, 0)
+antikick.TextScaled = true
+antikick.TextSize = 14.000
+antikick.TextWrapped = true
+antikick.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gdsfnf/anti-kick/main/anti%20kick"))();
+end)
+
 openmain.Name = "openmain"
 openmain.Parent = ScreenGui
 openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-openmain.Position = UDim2.new(0.0174632352, 0, 0.4148148, 0)
-openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Position = UDim2.new(0.0240000002, 0, 0.467999995, 0)
+openmain.Size = UDim2.new(0, 129, 0, 42)
 openmain.Active = true
 openmain.Draggable = true
 
 open.Name = "open"
 open.Parent = openmain
-open.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
-open.Size = UDim2.new(0, 100, 0, 28)
-open.Font = Enum.Font.GothamBold
+open.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+open.Size = UDim2.new(0, 129, 0, 42)
+open.Font = Enum.Font.GothamBlack
 open.Text = "OPEN"
 open.TextColor3 = Color3.fromRGB(0, 0, 0)
 open.TextScaled = true
