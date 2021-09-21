@@ -81,17 +81,7 @@ PetSimX.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
 end)
 
-antikick.Name = "antikick"
-antikick.Parent = main
-antikick.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-antikick.Position = UDim2.new(0.520792067, 0, 0.403773576, 0)
-antikick.Size = UDim2.new(0, 200, 0, 50)
-antikick.Font = Enum.Font.GothamBold
-antikick.Text = "Anti AFK"
-antikick.TextColor3 = Color3.fromRGB(0, 0, 0)
-antikick.TextScaled = true
-antikick.TextSize = 14.000
-antikick.TextWrapped = true
+
 antikick.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gdsfnf/anti-kick/main/anti%20kick"))();
 end)
