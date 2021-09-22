@@ -5,6 +5,10 @@ local close = Instance.new("TextButton")
 local minimalize = Instance.new("TextButton")
 local PetSimX = Instance.new("TextButton")
 local antikick = Instance.new("TextButton")
+local ComingSoon = Instance.new("TextButton")
+local ComingSoon_2 = Instance.new("TextButton")
+local ComingSoon_3 = Instance.new("TextButton")
+local ComingSoon_4 = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
@@ -15,10 +19,8 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BorderSizePixel = 0
 main.Position = UDim2.new(0.238970593, 0, 0.518518507, 0)
-main.Size = UDim2.new(0, 505, 0, 265)
+main.Size = UDim2.new(0.48698169, 0, 0.392592579, 0)
 main.Visible = false
-main.Active = true
-main.Draggable = true
 
 title.Name = "title"
 title.Parent = main
@@ -69,7 +71,7 @@ end)
 PetSimX.Name = "PetSimX"
 PetSimX.Parent = main
 PetSimX.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-PetSimX.Position = UDim2.new(0.0839999989, 0, 0.404000014, 0)
+PetSimX.Position = UDim2.new(0.0839999989, 0, 0.211547181, 0)
 PetSimX.Size = UDim2.new(0, 200, 0, 50)
 PetSimX.Font = Enum.Font.GothamBold
 PetSimX.Text = "Pet Sim X"
@@ -81,33 +83,82 @@ PetSimX.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
 end)
 
+
 antikick.Name = "antikick"
 antikick.Parent = main
 antikick.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-antikick.Position = UDim2.new(0.520792067, 0, 0.403773576, 0)
+antikick.Position = UDim2.new(0.520792067, 0, 0.211320743, 0)
 antikick.Size = UDim2.new(0, 200, 0, 50)
 antikick.Font = Enum.Font.GothamBold
-antikick.Text = "Anti AFK"
+antikick.Text = "Anti Kick"
 antikick.TextColor3 = Color3.fromRGB(0, 0, 0)
 antikick.TextScaled = true
 antikick.TextSize = 14.000
-antikick.TextWrapped = true
-antikick.MouseButton1Down:connect(function()
+antikick.TextWrapped = trueantikick.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gdsfnf/anti-kick/main/anti%20kick"))();
 end)
+
+ComingSoon.Name = "Coming Soon"
+ComingSoon.Parent = main
+ComingSoon.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ComingSoon.Position = UDim2.new(0.520792067, 0, 0.483018875, 0)
+ComingSoon.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon.Font = Enum.Font.GothamBold
+ComingSoon.Text = "Coming Soon"
+ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextWrapped = true
+
+ComingSoon_2.Name = "Coming Soon"
+ComingSoon_2.Parent = main
+ComingSoon_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ComingSoon_2.Position = UDim2.new(0.520792067, 0, 0.758490562, 0)
+ComingSoon_2.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon_2.Font = Enum.Font.GothamBold
+ComingSoon_2.Text = "Coming Soon"
+ComingSoon_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_2.TextScaled = true
+ComingSoon_2.TextSize = 14.000
+ComingSoon_2.TextWrapped = true
+
+ComingSoon_3.Name = "Coming Soon"
+ComingSoon_3.Parent = main
+ComingSoon_3.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ComingSoon_3.Position = UDim2.new(0.083168298, 0, 0.758490562, 0)
+ComingSoon_3.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon_3.Font = Enum.Font.GothamBold
+ComingSoon_3.Text = "Coming Soon"
+ComingSoon_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_3.TextScaled = true
+ComingSoon_3.TextSize = 14.000
+ComingSoon_3.TextWrapped = true
+
+ComingSoon_4.Name = "Coming Soon"
+ComingSoon_4.Parent = main
+ComingSoon_4.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ComingSoon_4.Position = UDim2.new(0.083168298, 0, 0.483018875, 0)
+ComingSoon_4.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon_4.Font = Enum.Font.GothamBold
+ComingSoon_4.Text = "Coming Soon"
+ComingSoon_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon_4.TextScaled = true
+ComingSoon_4.TextSize = 14.000
+ComingSoon_4.TextWrapped = true
 
 openmain.Name = "openmain"
 openmain.Parent = ScreenGui
 openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-openmain.Position = UDim2.new(0.0240000002, 0, 0.467999995, 0)
-openmain.Size = UDim2.new(0, 129, 0, 42)
+openmain.BorderSizePixel = 0
+openmain.Position = UDim2.new(0.0264906641, 0, 0.467999995, 0)
+openmain.Size = UDim2.new(0.0954676941, 0, 0.0503703691, 0)
 openmain.Active = true
 openmain.Draggable = true
 
 open.Name = "open"
 open.Parent = openmain
 open.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-open.Size = UDim2.new(0, 129, 0, 42)
+open.Size = UDim2.new(0, 99, 0, 34)
 open.Font = Enum.Font.GothamBlack
 open.Text = "OPEN"
 open.TextColor3 = Color3.fromRGB(0, 0, 0)
