@@ -21,6 +21,8 @@ main.BorderSizePixel = 0
 main.Position = UDim2.new(0.238970593, 0, 0.518518507, 0)
 main.Size = UDim2.new(0.48698169, 0, 0.392592579, 0)
 main.Visible = false
+main.Active = true
+main.Draggable = true
 
 title.Name = "title"
 title.Parent = main
